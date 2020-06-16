@@ -1,0 +1,519 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @sequence.name %>
+</p>
+
+<p>
+  <strong>Pose 1:</strong>
+
+<% if @sequence.pose_1_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_1_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 2:</strong>
+
+<% if @sequence.pose_2_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_2_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 3:</strong>
+
+<% if @sequence.pose_3_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_3_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 4:</strong>
+
+<% if @sequence.pose_4_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_4_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 5:</strong>
+
+<% if @sequence.pose_5_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_5_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 6:</strong>
+
+<% if @sequence.pose_6_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_6_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 7:</strong>
+
+<% if @sequence.pose_7_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_7_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 8:</strong>
+
+<% if @sequence.pose_8_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_8_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 9:</strong>
+
+<% if @sequence.pose_9_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_9_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 10:</strong>
+
+<% if @sequence.pose_10_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_10_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 11:</strong>
+
+<% if @sequence.pose_11_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_11_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 12:</strong>
+
+<% if @sequence.pose_12_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_12_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 13:</strong>
+
+<% if @sequence.pose_13_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_13_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 14:</strong>
+
+<% if @sequence.pose_14_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_14_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 15:</strong>
+
+<% if @sequence.pose_15_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_15_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 16:</strong>
+
+<% if @sequence.pose_16_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_16_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 17:</strong>
+
+<% if @sequence.pose_17_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_17_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 18:</strong>
+
+<% if @sequence.pose_18_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_18_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 19:</strong>
+
+<% if @sequence.pose_19_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_19_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 20:</strong>
+
+<% if @sequence.pose_20_id == nil %>
+  <%= "~ nil ~"%>
+<% else %>
+  <% @pose = Pose.where(id: @sequence.pose_20_id)[0] %>
+  <table>
+    <tr>
+      <td><%= image_tag(@pose.demo_icon_url.to_s, size: "44") %></td>
+      <td><%= @pose.english_name %></td>
+    </tr>
+  </table>
+  
+<% end -%>
+
+</p>
+
+<p>
+  <strong>Pose 21:</strong>
+  <%= @sequence.pose_21_id %>
+</p>
+
+<p>
+  <strong>Pose 22:</strong>
+  <%= @sequence.pose_22_id %>
+</p>
+
+<p>
+  <strong>Pose 23:</strong>
+  <%= @sequence.pose_23_id %>
+</p>
+
+<p>
+  <strong>Pose 24:</strong>
+  <%= @sequence.pose_24_id %>
+</p>
+
+<p>
+  <strong>Pose 25:</strong>
+  <%= @sequence.pose_25_id %>
+</p>
+
+<p>
+  <strong>Pose 26:</strong>
+  <%= @sequence.pose_26_id %>
+</p>
+
+<p>
+  <strong>Pose 27:</strong>
+  <%= @sequence.pose_27_id %>
+</p>
+
+<p>
+  <strong>Pose 28:</strong>
+  <%= @sequence.pose_28_id %>
+</p>
+
+<p>
+  <strong>Pose 29:</strong>
+  <%= @sequence.pose_29_id %>
+</p>
+
+<p>
+  <strong>Pose 30:</strong>
+  <%= @sequence.pose_30_id %>
+</p>
+
+<p>
+  <strong>Pose 31:</strong>
+  <%= @sequence.pose_31_id %>
+</p>
+
+<p>
+  <strong>Pose 32:</strong>
+  <%= @sequence.pose_32_id %>
+</p>
+
+<p>
+  <strong>Pose 33:</strong>
+  <%= @sequence.pose_33_id %>
+</p>
+
+<p>
+  <strong>Pose 34:</strong>
+  <%= @sequence.pose_34_id %>
+</p>
+
+<p>
+  <strong>Pose 35:</strong>
+  <%= @sequence.pose_35_id %>
+</p>
+
+<p>
+  <strong>Pose 36:</strong>
+  <%= @sequence.pose_36_id %>
+</p>
+
+<p>
+  <strong>Pose 37:</strong>
+  <%= @sequence.pose_37_id %>
+</p>
+
+<p>
+  <strong>Pose 38:</strong>
+  <%= @sequence.pose_38_id %>
+</p>
+
+<p>
+  <strong>Pose 39:</strong>
+  <%= @sequence.pose_39_id %>
+</p>
+
+<p>
+  <strong>Pose 40:</strong>
+  <%= @sequence.pose_40_id %>
+</p>
+
+<p>
+  <strong>Pose 41:</strong>
+  <%= @sequence.pose_41_id %>
+</p>
+
+<p>
+  <strong>Pose 42:</strong>
+  <%= @sequence.pose_42_id %>
+</p>
+
+<p>
+  <strong>Pose 43:</strong>
+  <%= @sequence.pose_43_id %>
+</p>
+
+<p>
+  <strong>Pose 44:</strong>
+  <%= @sequence.pose_44_id %>
+</p>
+
+<p>
+  <strong>Pose 45:</strong>
+  <%= @sequence.pose_45_id %>
+</p>
+
+<p>
+  <strong>Pose 46:</strong>
+  <%= @sequence.pose_46_id %>
+</p>
+
+<p>
+  <strong>Pose 47:</strong>
+  <%= @sequence.pose_47_id %>
+</p>
+
+<p>
+  <strong>Pose 48:</strong>
+  <%= @sequence.pose_48_id %>
+</p>
+
+<p>
+  <strong>Pose 49:</strong>
+  <%= @sequence.pose_49_id %>
+</p>
+
+<p>
+  <strong>Pose 50:</strong>
+  <%= @sequence.pose_50_id %>
+</p>
+
+<%= link_to 'Edit', edit_sequence_path(@sequence) %> |
+<%= link_to 'Back', sequences_path %>
