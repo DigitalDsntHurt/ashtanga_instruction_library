@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<table>
+	<tr>
+		<td>
+			<p>
+				<%= image_tag("#{@pose.demo_icon_url}", size: "222") %>
+			</p>
+		</td>
+		<td>
+			<p>
+			  <strong>English name:</strong>
+			  <%= @pose.english_name %>
+			</p>
+
+			<p>
+			  <strong>Sanskrit name:</strong>
+			  <%= @pose.sanskrit_name %>
+			</p>
+
+			<p>
+			  <strong>Demo icon url:</strong>
+			  <%= @pose.demo_icon_url %>
+			</p>
+		</td>
+	</tr>
+</table>
+
+<%= link_to 'Edit', edit_pose_path(@pose) %> |
+<%= link_to 'Back', poses_path %>

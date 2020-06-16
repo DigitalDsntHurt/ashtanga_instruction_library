@@ -1,0 +1,273 @@
+<%= form_with(model: sequence, local: true) do |form| %>
+  <% if sequence.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sequence.errors.count, "error") %> prohibited this sequence from being saved:</h2>
+
+      <ul>
+        <% sequence.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_1_id %>
+    <%= form.select :pose_1_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true %>
+    
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_2_id %>
+    <%= form.select :pose_2_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_3_id %>
+    <%= form.select :pose_3_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_4_id %>
+    <%= form.select :pose_4_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_5_id %>
+    <%= form.select :pose_5_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_6_id %>
+    <%= form.select :pose_6_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_7_id %>
+    <%= form.select :pose_7_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_8_id %>
+    <%= form.select :pose_8_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_9_id %>
+    <%= form.select :pose_9_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_10_id %>
+    <%= form.select :pose_10_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_11_id %>
+    <%= form.select :pose_11_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_12_id %>
+    <%= form.select :pose_12_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_13_id %>
+    <%= form.select :pose_13_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_14_id %>
+    <%= form.select :pose_14_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_15_id %>
+    <%= form.select :pose_15_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_16_id %>
+    <%= form.select :pose_16_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_17_id %>
+    <%= form.select :pose_17_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_18_id %>
+    <%= form.select :pose_18_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_19_id %>
+    <%= form.select :pose_19_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_20_id %>
+    <%= form.select :pose_20_id, Pose.all.collect{ |pose| ["#{pose.english_name}", pose.id] }, class: "form-control form-control-lg", include_blank: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_21_id %>
+    <%= form.number_field :pose_21_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_22_id %>
+    <%= form.number_field :pose_22_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_23_id %>
+    <%= form.number_field :pose_23_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_24_id %>
+    <%= form.number_field :pose_24_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_25_id %>
+    <%= form.number_field :pose_25_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_26_id %>
+    <%= form.number_field :pose_26_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_27_id %>
+    <%= form.number_field :pose_27_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_28_id %>
+    <%= form.number_field :pose_28_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_29_id %>
+    <%= form.number_field :pose_29_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_30_id %>
+    <%= form.number_field :pose_30_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_31_id %>
+    <%= form.number_field :pose_31_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_32_id %>
+    <%= form.number_field :pose_32_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_33_id %>
+    <%= form.number_field :pose_33_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_34_id %>
+    <%= form.number_field :pose_34_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_35_id %>
+    <%= form.number_field :pose_35_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_36_id %>
+    <%= form.number_field :pose_36_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_37_id %>
+    <%= form.number_field :pose_37_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_38_id %>
+    <%= form.number_field :pose_38_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_39_id %>
+    <%= form.number_field :pose_39_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_40_id %>
+    <%= form.number_field :pose_40_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_41_id %>
+    <%= form.number_field :pose_41_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_42_id %>
+    <%= form.number_field :pose_42_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_43_id %>
+    <%= form.number_field :pose_43_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_44_id %>
+    <%= form.number_field :pose_44_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_45_id %>
+    <%= form.number_field :pose_45_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_46_id %>
+    <%= form.number_field :pose_46_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_47_id %>
+    <%= form.number_field :pose_47_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_48_id %>
+    <%= form.number_field :pose_48_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_49_id %>
+    <%= form.number_field :pose_49_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pose_50_id %>
+    <%= form.number_field :pose_50_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

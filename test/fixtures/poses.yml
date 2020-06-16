@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  english_name: MyString
+  sanskrit_name: MyString
+  demo_icon_url: MyString
+
+two:
+  english_name: MyString
+  sanskrit_name: MyString
+  demo_icon_url: MyString
