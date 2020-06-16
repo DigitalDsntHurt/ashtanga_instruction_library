@@ -1,0 +1,28 @@
+@import "~bootstrap/scss/bootstrap";
+
+
+body{
+	padding: 22px;
+}
+
+
+
+
+.section-head{
+	text-align: center;
+	margin-top: 22px;
+}
+
+.vids-container{
+	/*width: 100vw;*/
+	margin: auto;
+	/*margin-left: 15vw;*/
+}
+
+.vids-table{
+	margin: auto;
+
+	td{
+		padding: 12px;
+	}
+}
