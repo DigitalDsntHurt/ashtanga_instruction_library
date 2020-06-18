@@ -1,5 +1,57 @@
 <p id="notice"><%= notice %></p>
 
+
+
+
+
+<h1 class="section-head">
+  <%= @sequence.name %>
+</h1>
+
+<p align="center">
+  <%= link_to 'Edit', edit_sequence_path(@sequence) %> |
+  <%= link_to 'Destroy', @sequence, method: :delete, data: { confirm: 'Are you sure?' } %> |
+  <%= link_to 'Back', sequences_path %>
+</p>
+
+<table class="sequence-table">
+
+  <tr>
+    <td>
+    
+    </td>  
+  </tr>
+
+  <tr>
+    
+    <% @sequence.attributes.each{|obj| %>
+      <% if obj[0].include?("pose_") and obj[1] != nil %>
+        
+        <td align="center">
+          <% @pose_id = obj[1] %>
+
+          <%= link_to (Pose.where(id: @pose_id)[0]) do %>
+            <%= image_tag Pose.where(id: @pose_id)[0].demo_icon_url, size: 88, class: "demo-icon-img" %>
+          <% end -%>
+          
+
+          <div class="img-labels">
+          <%= Pose.where(id: @pose_id)[0].english_name %><br>
+          <%= Pose.where(id: @pose_id)[0].sanskrit_name %>
+          </div>
+        </td>
+
+      <% end %>
+    <% } %>  
+
+  </tr>
+
+</table>
+
+<br><br><br>
+<hr>
+<br><br><br>
+
 <h1 class="section-head">
   <%= @sequence.name %>
 </h1>
