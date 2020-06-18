@@ -27,4 +27,5 @@
 </table>
 
 <%= link_to 'Edit', edit_pose_path(@pose) %> |
+<%= link_to 'Destroy', @pose, method: :delete, data: { confirm: 'Are you sure?' } %> |
 <%= link_to 'Back', poses_path %>

@@ -1,10 +1,12 @@
-<nav class="navbar fixed-bottom navbar-dark bg-dark ">
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
 	<ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <%= link_to "poses", poses_path, class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "sequences", sequences_path, class: "nav-link" %>
+        <table>
+          <tr>
+            <td><%= link_to "poses", poses_path, class: "nav-link" %></td>
+            <td><%= link_to "sequences", sequences_path, class: "nav-link" %></td>
+          </tr>
+        </table>
       </li>
   </ul>
 

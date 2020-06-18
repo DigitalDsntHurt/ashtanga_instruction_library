@@ -1,8 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
+<h1 class="section-head">
   <%= @sequence.name %>
+</h1>
+
+<p align="center">
+  <%= link_to 'Edit', edit_sequence_path(@sequence) %> |
+  <%= link_to 'Destroy', @sequence, method: :delete, data: { confirm: 'Are you sure?' } %> |
+  <%= link_to 'Back', sequences_path %>
 </p>
 
 <p>
@@ -514,6 +519,3 @@
   <strong>Pose 50:</strong>
   <%= @sequence.pose_50_id %>
 </p>
-
-<%= link_to 'Edit', edit_sequence_path(@sequence) %> |
-<%= link_to 'Back', sequences_path %>

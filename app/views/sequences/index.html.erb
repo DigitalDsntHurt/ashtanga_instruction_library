@@ -63,7 +63,7 @@
   <tbody>
     <% @sequences.each do |sequence| %>
       <tr>
-        <td><%= sequence.name %></td>
+        <td><%= link_to sequence.name, sequence %></td>
         <td><%= sequence.pose_1_id %></td>
         <td><%= sequence.pose_2_id %></td>
         <td><%= sequence.pose_3_id %></td>

@@ -9,20 +9,16 @@
       <th>English name</th>
       <th>Sanskrit name</th>
       <th>Demo icon url</th>
-      <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @poses.each do |pose| %>
       <tr>
-        <td><%= image_tag(pose.demo_icon_url, size: "44") %></td>
-        <td><%= pose.english_name %></td>
-        <td><%= pose.sanskrit_name %></td>
-        <td><%= pose.demo_icon_url %></td>
-        <td><%= link_to 'Show', pose %></td>
-        <td><%= link_to 'Edit', edit_pose_path(pose) %></td>
-        <td><%= link_to 'Destroy', pose, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to image_tag(pose.demo_icon_url, size: "44"), pose %></td>
+        <td><%= link_to pose.english_name, pose %></td>
+        <td><%= link_to pose.sanskrit_name, pose %></td>
+        <td><%= link_to pose.demo_icon_url, pose.demo_icon_url, target: "_blank" %></td>
       </tr>
     <% end %>
   </tbody>
