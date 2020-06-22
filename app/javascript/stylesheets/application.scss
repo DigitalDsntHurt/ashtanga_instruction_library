@@ -44,9 +44,17 @@ copyright{
 .sequence-table{
 	width: 90vw;
 	margin: auto;
+}
 
-	td{
-		/*padding: 2vw;*/
-		/*align: center;*/
-	}
+
+
+.vid-grid-container{
+	width: 98vw;
+	margin: auto;
+	align-content: center;
+}
+
+.vid-grid-item{
+	display: inline-block;
+	margin: auto;
 }
