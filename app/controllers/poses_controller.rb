@@ -69,6 +69,6 @@ class PosesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def pose_params
-      params.require(:pose).permit(:english_name, :sanskrit_name, :demo_icon_url)
+      params.require(:pose).permit(:english_name, :sanskrit_name, :demo_icon_url, :demo_vid_url)
     end
 end

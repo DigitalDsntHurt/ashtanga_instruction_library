@@ -9,6 +9,7 @@
       <th>English name</th>
       <th>Sanskrit name</th>
       <th>Demo icon url</th>
+      <th>Demo vid url</th>
     </tr>
   </thead>
 
@@ -19,6 +20,7 @@
         <td><%= link_to pose.english_name, pose %></td>
         <td><%= link_to pose.sanskrit_name, pose %></td>
         <td><%= link_to pose.demo_icon_url, pose.demo_icon_url, target: "_blank" %></td>
+        <td><%= link_to pose.demo_vid_url, pose.demo_vid_url, target: "_blank" %></td>
       </tr>
     <% end %>
   </tbody>

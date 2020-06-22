@@ -22,6 +22,10 @@
 			  <strong>Demo icon url:</strong>
 			  <%= @pose.demo_icon_url %>
 			</p>
+			<p>
+			  <strong>Demo video url:</strong>
+			  <%= @pose.demo_vid_url %>
+			</p>
 		</td>
 	</tr>
 </table>
@@ -29,3 +33,10 @@
 <%= link_to 'Edit', edit_pose_path(@pose) %> |
 <%= link_to 'Destroy', @pose, method: :delete, data: { confirm: 'Are you sure?' } %> |
 <%= link_to 'Back', poses_path %>
+
+
+<div class="vid-grid-container">
+	<div class="vid-grid-item">
+		<iframe width="560" height="315" src="<%= @pose.demo_vid_url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+</div>
